@@ -1,8 +1,14 @@
+# Name of my workflow
 name: My Test Workflow
-'on':
-  - push
-jobs: null
-say-hello: null
-runs-on: ubuntu-latest
-steps:
-  - run: 'echo "Hello, GitHub Actions!"'
+
+# Define the trigger events(s)
+on: [push]
+
+# Job run in parallel by default, each runs steps in sequence
+jobs:
+
+  # Job to print something out
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions!"
