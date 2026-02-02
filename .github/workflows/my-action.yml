@@ -10,5 +10,5 @@ jobs:
     # Job to print something out
     say-hello:
         runs-on: ubuntu-latest
-	steps:
-	    - run: echo "Hello, GitHub Actions!"
+		steps:
+		    - run: echo "Hello, GitHub Actions!"
